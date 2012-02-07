@@ -35,7 +35,7 @@
  
   <div class="meta">
     <small>posted on <?php echo $job->getDateTimeObject('created_at')->format('m/d/Y') ?></small></br>
-    <small>updated on <?php echo $job->getDateTimeObject('updated_at')->format('m/d/Y') ?></small>
+    <small>expires at <?php echo $job->getDateTimeObject('expires_at')->format('m/d/Y') ?></small>
   </div>
  
   <div style="padding: 20px 0">
