@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites failures="2" errors="16" tests="24" assertions="24" skipped="0">
+  <testsuite name="sfTestFunctionalBase.class" file="C:\xampp\project\jobeet\lib\vender\symfony\lib\test\sfTestFunctionalBase.class.php" failures="1" errors="8" skipped="0" tests="4" assertions="4">
+    <testcase name="request parameter &quot;module&quot; is &quot;category&quot;" file="C:\xampp\project\jobeet\lib\vender\symfony\lib\test\sfTesterRequest.class.php" line="48" assertions="1"/>
+    <testcase name="request parameter &quot;action&quot; is &quot;show&quot;" file="C:\xampp\project\jobeet\lib\vender\symfony\lib\test\sfTesterRequest.class.php" line="48" assertions="1"/>
+    <testcase name="request parameter &quot;slug&quot; is &quot;programming&quot;" file="C:\xampp\project\jobeet\lib\vender\symfony\lib\test\sfTesterRequest.class.php" line="48" assertions="1"/>
+    <testcase name="An uncaught exception has been thrown." file="C:\xampp\project\jobeet\lib\vender\symfony\lib\test\sfTestFunctionalBase.class.php" line="511" assertions="1">
+      <failure type="lime"/>
+    </testcase>
+  </testsuite>
+  <testsuite name="sfTestFunctionalBase.class" file="C:\xampp\project\jobeet\lib\vender\symfony\lib\test\sfTestFunctionalBase.class.php" failures="1" errors="8" skipped="0" tests="8" assertions="8">
+    <testcase name="request parameter &quot;module&quot; is &quot;job&quot;" file="C:\xampp\project\jobeet\lib\vender\symfony\lib\test\sfTesterRequest.class.php" line="48" assertions="1"/>
+    <testcase name="request parameter &quot;action&quot; is &quot;index&quot;" file="C:\xampp\project\jobeet\lib\vender\symfony\lib\test\sfTesterRequest.class.php" line="48" assertions="1"/>
+    <testcase name="response selector &quot;.jobs td.position:contains(&quot;expired&quot;)&quot; does not exist" file="C:\xampp\project\jobeet\lib\vender\symfony\lib\test\sfTesterResponse.class.php" line="85" assertions="1"/>
+    <testcase name="response selector &quot;.category_programming tr&quot; matches &quot;10&quot; times" file="C:\xampp\project\jobeet\lib\vender\symfony\lib\test\sfTesterResponse.class.php" line="93" assertions="1"/>
+    <testcase name="response selector &quot;.category_design .more_jobs&quot; does not exist" file="C:\xampp\project\jobeet\lib\vender\symfony\lib\test\sfTesterResponse.class.php" line="85" assertions="1"/>
+    <testcase name="response selector &quot;.category_programming .more_jobs&quot; exists" file="C:\xampp\project\jobeet\lib\vender\symfony\lib\test\sfTesterResponse.class.php" line="89" assertions="1"/>
+    <testcase name="response selector &quot;.category_programming tr:first a[href*=&quot;/904/&quot;]&quot; exists" file="C:\xampp\project\jobeet\lib\vender\symfony\lib\test\sfTesterResponse.class.php" line="89" assertions="1"/>
+    <testcase name="An uncaught exception has been thrown." file="C:\xampp\project\jobeet\lib\vender\symfony\lib\test\sfTestFunctionalBase.class.php" line="511" assertions="1">
+      <failure type="lime"/>
+    </testcase>
+  </testsuite>
+  <testsuite name="JobeetTest" file="C:\xampp\project\jobeet\test\unit\JobeetTest.php" failures="0" errors="0" skipped="0" tests="9" assertions="9">
+    <testcase name="::slugify() converts all characters to lower case" file="C:\xampp\project\jobeet\test\unit\JobeetTest.php" line="7" assertions="1"/>
+    <testcase name="::slugify() replaces a white space by a -" file="C:\xampp\project\jobeet\test\unit\JobeetTest.php" line="8" assertions="1"/>
+    <testcase name="::slugify() replaces several white spaces by a single -" file="C:\xampp\project\jobeet\test\unit\JobeetTest.php" line="9" assertions="1"/>
+    <testcase name="::slugify() removes - at the beginning of a string" file="C:\xampp\project\jobeet\test\unit\JobeetTest.php" line="10" assertions="1"/>
+    <testcase name="::slugify() removes - at the end of a string" file="C:\xampp\project\jobeet\test\unit\JobeetTest.php" line="11" assertions="1"/>
+    <testcase name="::slugify() replaces non-ASCII characters by a -" file="C:\xampp\project\jobeet\test\unit\JobeetTest.php" line="12" assertions="1"/>
+    <testcase name="::slugify() converts the empty string to n-a" file="C:\xampp\project\jobeet\test\unit\JobeetTest.php" line="13" assertions="1"/>
+    <testcase name="::slugify() converts a string that only contains non-ASCII characters to n-a" file="C:\xampp\project\jobeet\test\unit\JobeetTest.php" line="14" assertions="1"/>
+    <testcase name="::slugify() removes accents" file="C:\xampp\project\jobeet\test\unit\JobeetTest.php" line="18" assertions="1"/>
+  </testsuite>
+  <testsuite name="JobeetJobTest" file="C:\xampp\project\jobeet\test\unit\model\JobeetJobTest.php" failures="0" errors="0" skipped="0" tests="3" assertions="3">
+    <testcase name="-&gt;getCompanySlug() return the slug for the company" file="C:\xampp\project\jobeet\test\unit\model\JobeetJobTest.php" line="8" assertions="1"/>
+    <testcase name="-&gt;save() updates expires_at if not set" file="C:\xampp\project\jobeet\test\unit\model\JobeetJobTest.php" line="14" assertions="1"/>
+    <testcase name="-&gt;save() does not update expires_at if set" file="C:\xampp\project\jobeet\test\unit\model\JobeetJobTest.php" line="18" assertions="1"/>
+  </testsuite>
+</testsuites>

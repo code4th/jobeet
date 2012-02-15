@@ -7,7 +7,6 @@
 <?php end_slot() ?>
 
 <div id="job">
-  <?php echo $unk ?>
   <h1><?php echo $job->getCompany() ?></h1>
   <h2><?php echo $job->getLocation() ?></h2>
   <h3>
