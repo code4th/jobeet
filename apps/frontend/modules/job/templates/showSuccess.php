@@ -1,10 +1,13 @@
-<!-- apps/frontend/modules/job/templates/showSuccess.php -->
 <?php use_stylesheet('job.css') ?>
 <?php use_helper('Text') ?>
 
 <?php slot('title') ?>
   <?php echo sprintf('%s is looking for a %s', $job->getCompany(), $job->getPosition()) ?>
 <?php end_slot() ?>
+
+<?php if ($sf_request->getParameter('token') == $job->getToken()): ?>
+  <?php include_partial('job/admin', array('job' => $job)) ?>
+<?php endif ?>
 
 <div id="job">
   <h1><?php echo $job->getCompany() ?></h1>
@@ -38,8 +41,6 @@
   </div>
  
   <div style="padding: 20px 0">
-    <a href="<?php echo url_for('job/edit?id='.$job->getId()) ?>">
-      Edit
-    </a>
+    <a href="<?php echo url_for('job_edit', $job) ?>">Edit</a>
   </div>
 </div>
