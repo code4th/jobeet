@@ -39,8 +39,9 @@
     <small>posted on <?php echo $job->getDateTimeObject('created_at')->format('m/d/Y') ?></small></br>
     <small>expires at <?php echo $job->getDateTimeObject('expires_at')->format('m/d/Y') ?></small>
   </div>
- 
+<!-- 
   <div style="padding: 20px 0">
     <a href="<?php echo url_for('job_edit', $job) ?>">Edit</a>
   </div>
+-->
 </div>
