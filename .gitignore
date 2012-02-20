@@ -2,3 +2,5 @@
 /cache
 /log
 /nbproject/private/
+/plugins/.channels/
+/plugins/.registry/
