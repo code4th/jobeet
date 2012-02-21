@@ -33,12 +33,11 @@ class JobeetCategory extends BaseJobeetCategory
   {
     return $this->getActiveJobsQuery()->count();
   }
-  /*
-  public function getSlug()
+
+  public function getLatestPost()
   {
-    return Jobeet::slugify($this->getName());
-  }
-  */
+    return $this->getActiveJobs(1)->getFirst();
+  }  
   
   
 }
